@@ -7,3 +7,7 @@ $(document).ready(function(){
     document.getElementById(`sound${random_fart_id()}`).play();
   })
 })
+
+function playSoundAsync(url){
+    new Audio(url).play();
+}
