@@ -1,9 +1,10 @@
 $(document).ready(function(){
 
   $(document).on('keydown', function(){
-    document.getElementById('sound1').play();
-  })
-  $(document).on('keyup', function(){
-    document.getElementById('sound1').stop();
+    const num_farts = 3
+    function random_fart_id(){
+      return Math.floor(Math.random()*num_farts)+1
+    }
+    document.getElementById(`sound${random_fart_id()}`).play();
   })
 })
