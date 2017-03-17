@@ -1,9 +1,10 @@
 $(document).ready(function(){
-
+var sounds=['sound1', 'sound2', 'sound3']
   $(document).on('keydown', function(){
-    document.getElementById('sound1').play();
+    document.getElementById(sounds[Math.round(Math.random()*sounds.length)]).play();
   })
   $(document).on('keyup', function(){
-    document.getElementById('sound1').stop();
+
+    document.getElementById(sounds[Math.round(Math.random()*sounds.length)]).stop();
   })
 })
