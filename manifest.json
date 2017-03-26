@@ -2,12 +2,7 @@
   "manifest_version": 2,
   "name": "Fart Fingers",
   "description": "Plays fart noises as you type, because why not",
-  "version": "1.1",
-  "background": {
-    "html": ["index.html"],
-    "scripts": ["script.js"],
-    "persistent": false
-  },
+  "version": "1.2",
   "browser_action": {
     "name": "Fart Fingers",
     "icons": ["rsz_fart.png"],
@@ -15,16 +10,16 @@
   },
   "content_scripts": [ {
     "js": [ "jquery-3.2.0.min.js", "script.js" ],
-    "matches": [ "http://*/*", "https://*/*"]
+    "matches": ["http://*/*", "https://*/*"]
   }],
   "web_accessible_resources": [
     "fart-noises/fart-1.wav",
     "fart-noises/fart-2.wav",
     "fart-noises/fart-3.wav",
     "fart-noises/fart-4.wav",
-    "fart-noises/fart-5.mp3",
-    "fart-noises/fart-6.mp3",
-    "fart-noises/fart-7.mp3",
+    "fart-noises/fart-5.wav",
+    "fart-noises/fart-6.wav",
+    "fart-noises/fart-7.wav",
     "fart-noises/fart-8.wav",
     "fart-noises/fart-9.wav",
     "fart-noises/fart-10.wav",
